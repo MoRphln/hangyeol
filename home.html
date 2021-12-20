@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>232양한결</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <style>
+      * {
+        font-family: 'Montserrat', sans-serif;
+        text-decoration:none;
+        color:dimgray;
+      }
+      body {
+        margin:0;
+      }
+      img {
+        float:left;
+        padding:20px;
+        width: 100%;
+      }
+      .snip1226 {
+        font-family: 'Raleway', Arial, sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500%;
+      }
+      .snip1226 * {
+        box-sizing: border-box;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+      }
+      .snip1226 li {
+        display: inline-block;
+        list-style: outside none none;
+        margin: 0 1.5em;
+        overflow: hidden;
+      }
+      .snip1226 a {
+        padding: 0.3em 0;
+        color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        display: inline-block;
+        letter-spacing: 1px;
+        margin: 0;
+        text-decoration: none;
+      }
+      .snip1226 a:before,
+      .snip1226 a:after {
+        position: absolute;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+      }
+      .snip1226 a:before {
+        bottom: 100%;
+        display: block;
+        height: 3px;
+        width: 100%;
+        content: "";
+        background-color: #e67e22;
+      }
+      .snip1226 a:after {
+        padding: 0.3em 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        content: attr(data-hover);
+        color: white;
+        white-space: nowrap;
+      }
+      .snip1226 li:hover a,
+      .snip1226 .current a {
+        transform: translateY(100%);
+      }
+      /* Demo purposes only */
+      body {
+        background-color: #323232;
+      }
+      .p {
+        display:grid;
+        grid-template-columns:80px 1fr;
+        border-bottom:2px solid lightgray;
+        padding:5px;
+        background-color: #282828;
+      }
+      .home {
+        display:block;
+        font-size:60px;
+        text-align:center;
+        margin-right:80px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .a {
+        display:grid;
+        grid-template-columns: 1fr 4fr;
+        margin-right:20px;
+        margin-top:20px;
+        padding-right: 10px;
+      }
+      .li {
+        font-size:80px;
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        border-right:2px solid lightgray;
+        padding: 10px;
+      }
+      .hi {
+        font-size:80px;
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        margin:auto;
+        text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p">
+      <a href="home.html"><img src="o.PNG"></a>
+      <div class="snip1226">
+        <div class="home">
+          <a class="current" href="home.html" data-hover="Home">Home</a>
+        </div>
+      </div>
+    </div>
+    <div class="a">
+      <div class="snip1226">
+        <div class="li">
+          <div class="menu"><li><a href="skill.html" data-hover="Skill">Skill</a></li></div>
+          <div class="menu"><li><a href="project.html" data-hover="Project">Project</a></li></div>
+          <div class="menu"><li><a href="contact.html" data-hover="Contact">Contact</a></li></div>
+        </div>
+      </div>
+      <div class="hi">
+        <div><strong>Hi.</strong></div>
+        <div><strong>It's HanGyeol's Portfolio.</strong></div>
+      </div>
+    </div>
+  </body>
+</html>

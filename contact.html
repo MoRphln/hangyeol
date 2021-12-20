@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>232양한결</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <style>
+            * {
+              font-family: 'Montserrat', sans-serif;
+              text-decoration:none;
+              color:dimgray;
+            }
+            @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+            .snip1226 {
+              font-family: 'Raleway', Arial, sans-serif;
+              text-align: center;
+              text-transform: uppercase;
+              font-weight: 500;
+              font-weight: bold;
+            }
+            .snip1226 * {
+              box-sizing: border-box;
+              -webkit-transition: all 0.35s ease;
+              transition: all 0.35s ease;
+            }
+            .snip1226 li {
+              display: inline-block;
+              list-style: outside none none;
+              margin: 0 1.5em;
+              overflow: hidden;
+            }
+            .snip1226 a {
+              padding: 0.3em 0;
+              color: rgba(255, 255, 255, 0.5);
+              position: relative;
+              display: inline-block;
+              letter-spacing: 1px;
+              margin: 0;
+              text-decoration: none;
+            }
+            .snip1226 a:before,
+            .snip1226 a:after {
+              position: absolute;
+              -webkit-transition: all 0.35s ease;
+              transition: all 0.35s ease;
+            }
+            .snip1226 a:before {
+              bottom: 100%;
+              display: block;
+              height: 3px;
+              width: 100%;
+              content: "";
+              background-color: #e67e22;
+            }
+            .snip1226 a:after {
+              padding: 0.3em 0;
+              position: absolute;
+              bottom: 100%;
+              left: 0;
+              content: attr(data-hover);
+              color: white;
+              white-space: nowrap;
+            }
+            .snip1226 li:hover a,
+            .snip1226 .current a {
+              transform: translateY(100%);
+            }
+            /* Demo purposes only */
+            body {
+              background-color: #323232;
+              margin: 0;
+            }
+            .p {
+              display:grid;
+              grid-template-columns:80px 1fr ;
+              border-bottom:1px solid dimgray;
+              padding:5px;
+              background-color: #282828;
+            }
+            .home {
+              display:block;
+              font-size:60px;
+              text-align:center;
+              margin-right:80px;
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
+            .orca {
+              float:left;
+              padding:20px;
+            }
+            .all {
+              display:block;
+              grid-template-rows:1fr 0.5fr;
+              border-bottom:1px solid gray;
+            }
+            ul {
+              padding: 0;
+            }
+            .E {
+              word-spacing: 4px;
+            }
+            .aa {
+              display:grid;
+              grid-template-columns:1fr 1fr 1fr ;
+              padding:20px;
+            }
+        </style>
+      </head>
+      <body>
+        <div class="all">
+          <div class="p">
+            <a class="orca" href="home.html"><img src="o.PNG" width="80px"></a>
+            <div class="snip1226">
+              <div class="home">
+                <a class="current" href="contact.html" data-hover="Contact">Contact</a>
+              </div>
+            </div>
+          </div>
+          <ul class="snip1226">
+            <li><a href="home.html" data-hover="Home">Home</a></li>
+            <li><a href="skill.html" data-hover="Skill">Skill</a></li>
+            <li><a href="project.html" data-hover="Project">Project</a></li>
+          </ul>
+        </div>
+        <ul class="snip1226">
+          <div class="aa">
+            <li><a href="https://www.instagram.com/yang_hangyeol/" target="_blank" data-hover="yang_hangyeol" style="font-size:50px;">< I n s t a g r a m ></a></li>
+            <li><a data-hover="010-8879-7699"style="font-size:50px;">< n u m b e r ></a></li>
+            <li><a class="E" data-hover="hangyeol1453"style="font-size:50px;">< E - M a i l ></a></li>
+          </div>
+        </ul>
+        <ul class="snip1226">
+          <li><a href="home.html" data-hover="Thank you">< d o n a t e ></a></li>
+        </ul>
+      </body>
+    </html>
