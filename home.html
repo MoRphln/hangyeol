@@ -1,141 +1,280 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>232양한결</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <style>
-      * {
-        font-family: 'Montserrat', sans-serif;
-        text-decoration:none;
-        color:dimgray;
-      }
-      body {
-        margin:0;
-      }
-      img {
-        float:left;
-        padding:20px;
-        width: 100%;
-      }
-      .snip1226 {
-        font-family: 'Raleway', Arial, sans-serif;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 500%;
-      }
-      .snip1226 * {
-        box-sizing: border-box;
-        -webkit-transition: all 0.35s ease;
-        transition: all 0.35s ease;
-      }
-      .snip1226 li {
-        display: inline-block;
-        list-style: outside none none;
-        margin: 0 1.5em;
-        overflow: hidden;
-      }
-      .snip1226 a {
-        padding: 0.3em 0;
-        color: rgba(255, 255, 255, 0.5);
-        position: relative;
-        display: inline-block;
-        letter-spacing: 1px;
-        margin: 0;
-        text-decoration: none;
-      }
-      .snip1226 a:before,
-      .snip1226 a:after {
-        position: absolute;
-        -webkit-transition: all 0.35s ease;
-        transition: all 0.35s ease;
-      }
-      .snip1226 a:before {
-        bottom: 100%;
-        display: block;
-        height: 3px;
-        width: 100%;
-        content: "";
-        background-color: #e67e22;
-      }
-      .snip1226 a:after {
-        padding: 0.3em 0;
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        content: attr(data-hover);
-        color: white;
-        white-space: nowrap;
-      }
-      .snip1226 li:hover a,
-      .snip1226 .current a {
-        transform: translateY(100%);
-      }
-      /* Demo purposes only */
-      body {
-        background-color: #323232;
-      }
-      .p {
-        display:grid;
-        grid-template-columns:80px 1fr;
-        border-bottom:2px solid lightgray;
-        padding:5px;
-        background-color: #282828;
-      }
-      .home {
-        display:block;
-        font-size:60px;
-        text-align:center;
-        margin-right:80px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-      .a {
-        display:grid;
-        grid-template-columns: 1fr 4fr;
-        margin-right:20px;
-        margin-top:20px;
-        padding-right: 10px;
-      }
-      .li {
-        font-size:80px;
-        display:grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        border-right:2px solid lightgray;
-        padding: 10px;
-      }
-      .hi {
-        font-size:80px;
-        display:grid;
-        grid-template-rows: 1fr 1fr;
-        margin:auto;
-        text-align:center;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="p">
-      <a href="home.html"><img src="o.PNG"></a>
-      <div class="snip1226">
-        <div class="home">
-          <a class="current" href="home.html" data-hover="Home">Home</a>
+    <html>
+      <head>
+        <title>232양한결</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <style>
+            * {
+              font-family: 'Montserrat', sans-serif;
+              text-decoration:none;
+              color:dimgray;
+            }
+            @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+            .snip1226 {
+              font-family: 'Raleway', Arial, sans-serif;
+              text-align: center;
+              text-transform: uppercase;
+              font-weight: 500;
+              font-weight: bold;
+              font-size: 25px;
+            }
+            .snip1226 * {
+              box-sizing: border-box;
+              -webkit-transition: all 0.35s ease;
+              transition: all 0.35s ease;
+            }
+            .snip1226 li {
+              display: inline-block;
+              list-style: outside none none;
+              margin: 0 1.5em;
+              overflow: hidden;
+            }
+            .snip1226 a {
+              padding: 0.3em 0;
+              color: rgba(255, 255, 255, 0.5);
+              position: relative;
+              display: inline-block;
+              letter-spacing: 1px;
+              margin: 0;
+              text-decoration: none;
+            }
+            .snip1226 a:before,
+            .snip1226 a:after {
+              position: absolute;
+              -webkit-transition: all 0.35s ease;
+              transition: all 0.35s ease;
+            }
+            .snip1226 a:before {
+              bottom: 100%;
+              display: block;
+              height: 3px;
+              width: 100%;
+              content: "";
+              background-color: #e67e22;
+            }
+            .snip1226 a:after {
+              padding: 0.3em 0;
+              position: absolute;
+              bottom: 100%;
+              left: 0;
+              content: attr(data-hover);
+              color: white;
+              white-space: nowrap;
+            }
+            .snip1226 li:hover a,
+            .snip1226 .current a {
+              transform: translateY(100%);
+            }
+            /* Demo purposes only */
+            body {
+              background-color: #323232;
+              margin: 0;
+            }
+            .p {
+              display:grid;
+              grid-template-columns:80px 1fr ;
+              border-bottom:1px solid dimgray;
+              padding:5px;
+            }
+            .home {
+              display:block;
+              font-size:60px;
+              text-align:center;
+              margin-right:80px;
+              margin-left: 25px;
+              margin-top: 20px;
+            }
+            .orca {
+              float:left;
+              padding:20px;
+            }
+            .all {
+              display:block;
+              grid-template-rows:1fr 0.5fr;
+              margin-top:auto;
+              margin-bottom: auto;
+            }
+            ul {
+              padding: 0;
+            }
+            .E {
+              word-spacing: 4px;
+            }
+            .aa {
+              display:grid;
+              grid-template-columns:1fr 1fr 1fr ;
+              padding:20px;
+            }
+            @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+            figure.snip0071 {
+              font-family: 'Raleway', Arial, sans-serif;
+              position: relative;
+              overflow: hidden;
+              margin: 10px;
+              width: 100%;
+              background: #ffffff;
+              color: #ffffff;
+              border: 10px solid #ffffff;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+            }
+            figure.snip0071 * {
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              -webkit-transition: all 0.25s ease-in-out;
+              transition: all 0.25s ease-in-out;
+            }
+            figure.snip0071 .image {
+              position: relative;
+              width: 58%;
+              overflow: hidden;
+              right: -14%;
+              float: right;
+              z-index: 1;
+              box-shadow: 0px 0 20px rgba(0, 0, 0, 0.5);
+              -webkit-transform: skewX(-15deg);
+              transform: skewX(-15deg);
+            }
+            figure.snip0071 .image img {
+              position: relative;
+              left: -20%;
+              max-width: 100%;
+              -webkit-transform: skewX(15deg);
+              transform: skewX(15deg);
+            }
+            figure.snip0071 figcaption {
+              background: #262626;
+              height: 100%;
+              margin: 0;
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+            }
+            figure.snip0071 figcaption h2,
+            figure.snip0071 figcaption p {
+              margin: 0;
+              text-align: left;
+              width: 100%;
+            }
+            figure.snip0071 figcaption h2 {
+              bottom: 40px;
+              position: absolute;
+              padding: 10px 20px;
+              background: rgba(0, 0, 0, 0.5);
+              font-size: 1.3em;
+              font-weight: 300;
+              text-transform: uppercase;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+              margin-bottom: 10px;
+            }
+            figure.snip0071 figcaption h2 span {
+              font-weight: 800;
+            }
+            figure.snip0071 figcaption p {
+              padding: 20px;
+              width: 50%;
+              bottom: 80px;
+              position: absolute;
+              font-size: 0.9em;
+              opacity: 0.8;
+              font-size: 40px;
+            }
+            figure.snip0071 figcaption .position {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              line-height: 40px;
+              padding-left: 20px;
+              font-style: italic;
+              opacity: 0.3;
+              margin-bottom: 5px;
+            }
+            figure.snip0071 a {
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              position: absolute;
+              z-index: 1;
+            }
+            figure.snip0071.blue figcaption {
+              background: #20638f;
+            }
+            figure.snip0071.red figcaption {
+              background: #962d22;
+            }
+            figure.snip0071.yellow figcaption {
+              background: #bf6516;
+            }
+            figure.snip0071:hover figcaption,
+            figure.snip0071.hover figcaption {
+              background: #333333;
+            }
+            figure.snip0071:hover.blue figcaption,
+            figure.snip0071.hover.blue figcaption {
+              background: #2472a4;
+            }
+            figure.snip0071:hover.red figcaption,
+            figure.snip0071.hover.red figcaption {
+              background: #ab3326;
+            }
+            figure.snip0071:hover.yellow figcaption,
+            figure.snip0071.hover.yellow figcaption {
+              background: #d67118;
+            }
+            figure.snip0071:hover .image,
+            figure.snip0071.hover .image {
+              box-shadow: 0px 0 0px rgba(0, 0, 0, 0.5);
+            }
+
+
+            /* Demo purposes only */
+            html {
+              height: 100%;
+            }
+            body {
+              background-color: #212121;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-flow: wrap;
+              margin: 0;
+              height: 100%;
+            }
+            .size {
+              display: grid;
+              grid-template-columns:1fr 1fr ;
+              width:1450px;
+            }
+        </style>
+      </head>
+      <body>
+        <div class="size">
+          <div class="all">
+            <div class="p">
+              <a class="orca" href="home.html"><img src="o.PNG" width="80px"></a>
+                <div class="home">
+                  <a href="home.html"><strong style="color:white;">Home</strong></a>
+                </div>
+            </div>
+            <ul class="snip1226">
+              <li><a href="skill.html" data-hover="Skill">Skill</a></li>
+              <li><a href="contact.html" data-hover="Contact">Contact</a></li>
+              <li><a href="project.html" data-hover="Project">Project</a></li>
+            </ul>
+          </div>
+          <figure class="snip0071" style="height: 420px;">
+          <figcaption>
+            <p style="color:gray" style="font-size:20px;">It's my Portfolio.</p>
+            <h2>Hangyeol <span>Yang</span></h2><span class="position" style="color:darkgray">3d grafic designer</span>
+          </figcaption>
+          <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample14.jpg" alt="sample14" /></div>
+          <a href="#"></a>
+          </figure>
         </div>
-      </div>
-    </div>
-    <div class="a">
-      <div class="snip1226">
-        <div class="li">
-          <div class="menu"><li><a href="skill.html" data-hover="Skill">Skill</a></li></div>
-          <div class="menu"><li><a href="project.html" data-hover="Project">Project</a></li></div>
-          <div class="menu"><li><a href="contact.html" data-hover="Contact">Contact</a></li></div>
-        </div>
-      </div>
-      <div class="hi">
-        <div><strong>Hi.</strong></div>
-        <div><strong>It's HanGyeol's Portfolio.</strong></div>
-      </div>
-    </div>
-  </body>
-</html>
+      </body>
+    </html>

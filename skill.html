@@ -1,60 +1,263 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>232양한결</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <style>
-      * {
-        font-family: 'Montserrat', sans-serif;
-        text-decoration:none;
-        color:dimgray;
-      }
-      body {
-        margin:0;
-      }
-      .img {
-        float:left;
-        padding:10px;
-      }
-      .p {
-        display:grid;
-        grid-template-columns:80px 1fr;
-        border-bottom:2px solid lightgray;
-        padding:5px;
-        background-color:ghostwhite;
-      }
-      .home {
-        display:block;
-        font-size:70px;
-        text-align:center;
-        margin-right:80px;
-      }
-      .menu {
-        text-align:center;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        border-top:2px solid lightgray;
-        font-size:50px;
-        background-color:ghostwhite;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="p">
-    <a href="home.html" class="img"><img src="o.PNG" width="70px"></a>
-      <a href="skill.html" class="home">Skill</a>
-    </div>
-    <img src="" width="50px">
-    <img src="" width="50px">
-    <img src="" width="50px">
-    <img src="" width="50px">
-    <div class="menu">
-      <span><a href="about.html">About</a></span>
-      <span><a href="project.html">Project</a></span>
-      <span><a href="contact.html">Contact</a></span>
-    </div>
-  </body>
-</html>
+    <html>
+      <head>
+        <title>232양한결</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <style>
+            * {
+              font-family: 'Montserrat', sans-serif;
+              text-decoration:none;
+              color:dimgray;
+            }
+            @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+            .snip1226 {
+              font-family: 'Raleway', Arial, sans-serif;
+              text-align: center;
+              text-transform: uppercase;
+              font-weight: 500;
+              font-weight: bold;
+            }
+            .snip1226 * {
+              box-sizing: border-box;
+              -webkit-transition: all 0.35s ease;
+              transition: all 0.35s ease;
+            }
+            .snip1226 li {
+              display: inline-block;
+              list-style: outside none none;
+              margin: 0 1.5em;
+              overflow: hidden;
+            }
+            .snip1226 a {
+              padding: 0.3em 0;
+              color: rgba(255, 255, 255, 0.5);
+              position: relative;
+              display: inline-block;
+              letter-spacing: 1px;
+              margin: 0;
+              text-decoration: none;
+            }
+            .snip1226 a:before,
+            .snip1226 a:after {
+              position: absolute;
+              -webkit-transition: all 0.35s ease;
+              transition: all 0.35s ease;
+            }
+            .snip1226 a:before {
+              bottom: 100%;
+              display: block;
+              height: 3px;
+              width: 100%;
+              content: "";
+              background-color: #e67e22;
+            }
+            .snip1226 a:after {
+              padding: 0.3em 0;
+              position: absolute;
+              bottom: 100%;
+              left: 0;
+              content: attr(data-hover);
+              color: white;
+              white-space: nowrap;
+            }
+            .snip1226 li:hover a,
+            .snip1226 .current a {
+              transform: translateY(100%);
+            }
+            /* Demo purposes only */
+            body {
+              background-color: #323232;
+              margin: 0;
+            }
+            .p {
+              display:grid;
+              grid-template-columns:80px 1fr ;
+              border-bottom:1px solid dimgray;
+              padding:5px;
+              background-color: #282828;
+            }
+            .home {
+              display:block;
+              font-size:60px;
+              text-align:center;
+              margin-right:80px;
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
+            .orca {
+              float:left;
+              padding:20px;
+            }
+            .img {
+              display:block;
+              width: 70%;
+              margin-right:auto;
+              margin-left:auto;
+              margin-top: 30px;
+              padding: 0;
+              border: 6px solid #A05C37;
+            }
+            .all {
+              display:block;
+              grid-template-rows:1fr 0.5fr;
+              border-bottom:1px solid gray;
+            }
+            ul {
+              padding: 0;
+            }
+            @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+            .snip1566 {
+              position: relative;
+              display: inline-block;
+              margin-top: 35%;
+              margin-bottom: auto;
+              max-width: 340px;
+              width: 100%;
+              color: #bbb;
+              margin-left: auto;
+              margin-right: auto;
+              font-size: 10px;
+              font-weight: bold;
+              box-shadow: none !important;
+              -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+            }
+
+            .snip1566 *,
+            .snip1566:before,
+            .snip1566:after {
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              -webkit-transition: all 0.3s linear;
+              transition: all 0.3s linear;
+            }
+
+            .snip1566:before,
+            .snip1566:after {
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              border-radius: 50%;
+              content: '';
+              position: absolute;
+              top: 0px;
+              bottom: 0px;
+              left: 0px;
+              right: 0px;
+              z-index: -1;
+              border: 2px solid #bbb;
+              border-color: transparent #bbb;
+            }
+
+            .snip1566 img {
+              max-width: 100%;
+              backface-visibility: hidden;
+              vertical-align: top;
+              border-radius: 50%;
+              padding: 10px;
+            }
+
+            .snip1566 figcaption {
+              position: absolute;
+              top: 5px;
+              bottom: 5px;
+              left: 5px;
+              right: 5px;
+              opacity: 0;
+              background-color: rgba(0, 0, 0, 0.9);
+              border-radius: 50%;
+            }
+
+            .snip1566 i {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              font-size: 4em;
+              z-index: 1;
+            }
+
+            .snip1566 a {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              z-index: 1;
+            }
+
+            .snip1566:hover figcaption,
+            .snip1566.hover figcaption {
+              opacity: 1;
+              -webkit-transform: translateX(0);
+              transform: translateX(0);
+            }
+
+            .snip1566:hover:before,
+            .snip1566.hover:before,
+            .snip1566:hover:after,
+            .snip1566.hover:after {
+              border-width: 10px;
+            }
+
+            .snip1566:hover:before,
+            .snip1566.hover:before {
+              -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+
+            .snip1566:hover:after,
+            .snip1566.hover:after {
+              -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+            }
+            .sk {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        </style>
+        <script>
+          $(".hover").mouseleave(
+            function () {
+              $(this).removeClass("hover");
+            }
+          );
+        </script>
+      </head>
+      <body>
+        <div class="all">
+          <div class="p">
+            <a class="orca" href="home.html"><img src="o.PNG" width="80px"></a>
+            <div class="snip1226">
+              <div class="home">
+                <a class="current" href="skill.html" data-hover="Skill">Skill</a>
+              </div>
+            </div>
+          </div>
+          <ul class="snip1226">
+            <li><a href="home.html" data-hover="Home">Home</a></li>
+            <li><a href="project.html" data-hover="Project">Project</a></li>
+            <li><a href="contact.html" data-hover="Contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="sk">
+          <figure class="snip1566">
+            <img src="htmll.png" alt="sq-sample14" />
+            <figcaption><i class="ion-android-add">html</i></figcaption>
+          </figure>
+          <figure class="snip1566">
+            <img src="csss.png" alt="sq-sample14" />
+            <figcaption><i class="ion-android-add">css</i></figcaption>
+          </figure><figure class="snip1566">
+            <img src="3dd.png" alt="sq-sample14" />
+            <figcaption><i class="ion-android-add">3d max</i></figcaption>
+          </figure><figure class="snip1566">
+            <img src="zz.png" alt="sq-sample14" />
+            <figcaption><i class="ion-android-add">zbrushs</i></figcaption>
+          </figure>
+        </div>
+      </body>
+    </html>
